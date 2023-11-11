@@ -29,7 +29,8 @@ instructions:
 ;
 
 instruction:
-            START order NEWLINE
+            NEWLINE                         // empty line
+        |   START order NEWLINE
         |   error NEWLINE                   { fprintf(outputFile, "Invalid statement\n"); }
 ;
 
